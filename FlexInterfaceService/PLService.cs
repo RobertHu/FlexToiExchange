@@ -109,7 +109,7 @@ namespace FlexInterfaceService
                         FloatingPLData data = (FloatingPLData)plData;
                         DateTime targetDate = data.FromTradeDay.AddDays(-1);
                         data.LastFloatingPLData.FromTradeDay = targetDate;
-                        data.LastFloatingPLData.ToTradeDay = targetDate;
+                        data.LastFloatingPLData.ToTradeDay =data.ToTradeDay;
                     }
 
                     if (plData.OriginAmount == 0) continue;

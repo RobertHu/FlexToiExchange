@@ -22,14 +22,11 @@ namespace FlexInterfaceManager
         private  ILog _Log = LogManager.GetLogger(typeof(ExportFileManager));
         private ExportErrorHandler _ErrorHandler = new ExportErrorHandler();
        
-
         public ExportFileParameters GetExportFileParameters(QueryObject data)
         {
             ExportFileParameters parameters = new ExportFileParameters();
             parameters.QueryInfo = data;
             parameters.IsPL = (int)data.Type > (int)BusinessTypeEnum.Transfer;
-
-            parameters.WhenExceedMaxRecordCountFunc = this._ErrorHandler.WhenExceedMaxRecordCount;
             return parameters;
         }
 
@@ -51,7 +48,7 @@ namespace FlexInterfaceManager
             bool isNormal = this._ErrorHandler.IsDataNormal(result);
             if (!isNormal) return;
 
-            IntIndex index = new IntIndex() {  PageIndex=1, FileIndex=1, RecordIndex=0};
+            ExportIndex index = new ExportIndex() {  PageIndex=1, FileIndex=1, RecordIndex=0};
 
             while (index.PageIndex <= result.PageCount)
             {
@@ -59,7 +56,7 @@ namespace FlexInterfaceManager
             }
         }
 
-        private void ExportBody(ExportFileParameters parameters, QueryPageCountResult result,IntIndex index)
+        private void ExportBody(ExportFileParameters parameters, QueryPageCountResult result,ExportIndex index)
         {
             object[] data = GetData(parameters.IsPL,index);
            
@@ -85,7 +82,7 @@ namespace FlexInterfaceManager
             }
         }
 
-        private object[] GetData(bool isPL,IntIndex index)
+        private object[] GetData(bool isPL,ExportIndex index)
         {
             object[] data = null;
             if (isPL)
@@ -100,7 +97,7 @@ namespace FlexInterfaceManager
             return data;
         }
 
-        private string GetFileName(string filePath,IntIndex index, int pageCount)
+        private string GetFileName(string filePath,ExportIndex index, int pageCount)
         {
             string continuousFileName = string.Empty;
             if (pageCount> 1)
@@ -180,8 +177,6 @@ namespace FlexInterfaceManager
                 {
                     Messenger.Default.Send(new LoadingMsg());
                 }, null);
-
-                if ((parameters.WhenExceedMaxRecordCountFunc((int)e.Result)) == false) return;
                 TaskUtil.TaskHelper.Create(Export, GetContinueAction(parameters), parameters);
             };
 
@@ -192,7 +187,7 @@ namespace FlexInterfaceManager
 
     }
 
-    public class IntIndex
+    public class ExportIndex
     {
         public int FileIndex { get; set; }
         public int PageIndex { get; set; }
@@ -203,7 +198,6 @@ namespace FlexInterfaceManager
     {
         public QueryObject QueryInfo { get; set; }
         public Action StartExportAction { get; set; }
-        public Func<int, bool> WhenExceedMaxRecordCountFunc { get; set; }
         public bool IsPL { get; set; }
     }
 

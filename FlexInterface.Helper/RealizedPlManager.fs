@@ -58,5 +58,6 @@ let Process(item: RealizedPLData,index, fs: FileStream) =
     let line2Parameter = {line1Parameter with  mappingCode= debitAccountNo ; d_cSign = "C" }
     let line1 = formatLine(line1Parameter)
     let line2 = formatLine(line2Parameter)
-    writeToFile(line1,fs,false)
-    writeToFile(line2,fs,true)
+    writeToFile(line1,fs)
+    writeToFile(line2,fs)
+    appendNewLine(fs)

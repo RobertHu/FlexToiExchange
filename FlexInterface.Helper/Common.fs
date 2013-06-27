@@ -16,12 +16,16 @@ let (|NullOrEmpty|NotNullAndEmpty|) (source: string) =
 
 let formatMoney fmt (str: 'a) = String.Format(sprintf "{0:%s}" fmt,str)
 
-let writeToFile (content: string,fs: FileStream,changeLine: bool) =
+let writeToFile (content: string,fs: FileStream) =
     let tw= new StreamWriter(fs,Encoding.Default)
-    tw.Write(content)
-    tw.WriteLine()
-    if changeLine then for i in 0..3 do tw.WriteLine()
+    tw.WriteLine(content)
     tw.Flush()
+
+let appendNewLine(fs: FileStream) = 
+    let tw= new StreamWriter(fs,Encoding.Default)
+    tw.WriteLine()
+    tw.Flush()
+    
 
 
 let getVouchNo (index: int) = GetFormatString(index.ToString(),true)

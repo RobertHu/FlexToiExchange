@@ -130,12 +130,13 @@ let PersiteDesposit (data: DepositData[],fs: FileStream, startIndex: int,busines
                                     m.BaseCurrencyName,Math.Abs(diff),1m,Math.Abs(diff),debitOrCrebit,desc1,desc2,customerCode)
             line3 <- formateLine(p3)
         |_ -> ()
-        writeToFile(line1,fs,false)
+        writeToFile(line1,fs)
         match line3 with
         |NotNullAndEmpty -> 
-                writeToFile(line2,fs,false)
-                writeToFile(line3,fs,true)
-        |NullOrEmpty -> writeToFile(line2,fs,true)
+                writeToFile(line2,fs)
+                writeToFile(line3,fs)
+        |NullOrEmpty -> writeToFile(line2,fs)
+        appendNewLine(fs)
 
         )
 

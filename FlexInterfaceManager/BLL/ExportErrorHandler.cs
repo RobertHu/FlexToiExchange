@@ -52,7 +52,7 @@ namespace FlexInterfaceManager.BLL
            }
            return true;
        }
-       public void WhenExportPerPageSendMsgToUI(bool isPL, IntIndex index, double pageCount)
+       public void WhenExportPerPageSendMsgToUI(bool isPL, ExportIndex index, double pageCount)
        {
            Common.SynchronizationContext.Send(ar =>
            {

@@ -6,7 +6,7 @@ open FlexInterface.Common
 open FlexInterface.Helper.FloatingPlFormater
 
 
-let ProcessHelper(item: FloatingPLData, index, fs: FileStream) =
+let ProcessHelper(item: FloatingPLData, index, fs: FileStream, isLastPL: bool) =
     let voucherNo = getPLVouchNo(index)
     let voucherType = "HVHV"
     let documentType= "I"
@@ -28,15 +28,11 @@ let ProcessHelper(item: FloatingPLData, index, fs: FileStream) =
 
     let getOppositeAccountNo() = getReverseValue !creditAccountNo (item.FromMt4LoginID, item.ToMt4LoginID)
 
-    match item.FromTradeDay = item.ToTradeDay with
-    | true -> 
-        creditAccountNo := getOppositeAccountNo()
-    | false -> ()
-
+    if isLastPL then creditAccountNo := getOppositeAccountNo()
 
     let p1 =
        {
-            toTradeDay = item.ToTradeDay;
+            toTradeDay = if isLastPL then item.FromTradeDay else item.ToTradeDay;
             voucherType = voucherType;
             voucherNo = voucherNo;
             voucherDate = item.ToTradeDay;
@@ -61,10 +57,11 @@ let ProcessHelper(item: FloatingPLData, index, fs: FileStream) =
     let line1 = formatLine p1
     let line2= formatLine p2
 
-    writeToFile(line1,fs,false)
-    writeToFile(line2,fs,true)
+    writeToFile(line1,fs)
+    writeToFile(line2,fs)
 
 
 let Process(item: FloatingPLData, index, fs: FileStream) =
-    ProcessHelper(item.LastFloatingPLData,index,fs)
-    ProcessHelper(item,index,fs)
+    ProcessHelper(item.LastFloatingPLData,index,fs,true)
+    ProcessHelper(item,index,fs,false)
+    appendNewLine(fs)

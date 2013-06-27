@@ -47,6 +47,7 @@ let formatLine (parameter: floatingParameter) =
     |false -> ownedOrGainText <- "客欠"
 
 
+
     let s1,s2,s3,s4,s5,s6 =
         (
             parameter.toTradeDay.ToFormateStr(),

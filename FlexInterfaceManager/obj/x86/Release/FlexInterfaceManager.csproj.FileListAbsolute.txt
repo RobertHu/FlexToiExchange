@@ -9,14 +9,9 @@ D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin
 D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin\Release\GalaSoft.MvvmLight.dll
 D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin\Release\GalaSoft.MvvmLight.Extras.dll
 D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin\Release\log4net.dll
-D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin\Release\FlexInterface.Repository.dll
 D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin\Release\System.Windows.Interactivity.dll
-D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin\Release\FluentNHibernate.dll
-D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin\Release\NHibernate.dll
-D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin\Release\Iesi.Collections.dll
 D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin\Release\FlexInterface.Common.pdb
 D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin\Release\FlexInterface.Helper.pdb
-D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin\Release\FlexInterface.Repository.pdb
 D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin\Release\System.Windows.Interactivity.xml
 D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin\Release\de\System.Windows.Interactivity.resources.dll
 D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\bin\Release\en\System.Windows.Interactivity.resources.dll

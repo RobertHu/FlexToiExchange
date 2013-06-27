@@ -124,7 +124,8 @@ let Process(item :FlexInterface.Common.InterestStorageLevyCommisionPLData,index,
     let line1 = formatLine line1parameter
     let line2 = formatLine line2parameter
 
-    writeToFile(line1,fs,false)
-    writeToFile(line2,fs,true)
+    writeToFile(line1,fs)
+    writeToFile(line2,fs)
+    appendNewLine(fs)
         
 
