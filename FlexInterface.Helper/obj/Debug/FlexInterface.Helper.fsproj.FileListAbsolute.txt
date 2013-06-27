@@ -1,0 +1,7 @@
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\obj\Debug\ResolveAssemblyReference.cache
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\bin\Debug\FlexInterface.Helper.dll
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\bin\Debug\FlexInterface.Helper.pdb
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\bin\Debug\FlexInterface.Common.dll
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\bin\Debug\FlexInterface.Common.pdb
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\obj\Debug\FlexInterface.Helper.dll
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\obj\Debug\FlexInterface.Helper.pdb

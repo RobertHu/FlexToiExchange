@@ -1,0 +1,457 @@
+2012-05-21 10:32:07,503 [13] ERROR FlexInterfaceManager.ConnectManager - InitializeConnection Failed   System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://tempuri.org/HelloWorld.
+   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at FlexInterfaceManager.FlexInterfaceService.StartupService.HelloWorld() in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\Web References\FlexInterfaceService\Reference.cs:line 78
+   at FlexInterfaceManager.ConnectManager.InitializeConnection(ConnectParamters parameters, DoWorkEventArgs s) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\ConnectManager.cs:line 32
+2012-05-21 10:32:27,251 [6] ERROR FlexInterfaceManager.ConnectManager - InitializeConnection Failed   System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://tempuri.org/HelloWorld.
+   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at FlexInterfaceManager.FlexInterfaceService.StartupService.HelloWorld() in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\Web References\FlexInterfaceService\Reference.cs:line 78
+   at FlexInterfaceManager.ConnectManager.InitializeConnection(ConnectParamters parameters, DoWorkEventArgs s) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\ConnectManager.cs:line 32
+2012-05-21 10:32:29,476 [13] ERROR FlexInterfaceManager.ConnectManager - InitializeConnection Failed   System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://tempuri.org/HelloWorld.
+   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at FlexInterfaceManager.FlexInterfaceService.StartupService.HelloWorld() in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\Web References\FlexInterfaceService\Reference.cs:line 78
+   at FlexInterfaceManager.ConnectManager.InitializeConnection(ConnectParamters parameters, DoWorkEventArgs s) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\ConnectManager.cs:line 32
+2012-05-21 10:32:31,227 [13] ERROR FlexInterfaceManager.ConnectManager - InitializeConnection Failed   System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: Server did not recognize the value of HTTP Header SOAPAction: http://tempuri.org/HelloWorld.
+   at System.Web.Services.Protocols.Soap11ServerProtocolHelper.RouteRequest()
+   at System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(SoapServerMessage message)
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at FlexInterfaceManager.FlexInterfaceService.StartupService.HelloWorld() in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\Web References\FlexInterfaceService\Reference.cs:line 78
+   at FlexInterfaceManager.ConnectManager.InitializeConnection(ConnectParamters parameters, DoWorkEventArgs s) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\ConnectManager.cs:line 32
+2012-05-21 10:37:18,704 [3] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-05-21 10:37:28,828 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 10:37:58,883 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 10:39:02,042 [12] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-05-21 10:39:12,139 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 10:41:15,854 [13] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-05-21 10:41:25,978 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 10:47:56,785 [12] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-05-21 10:48:06,918 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 10:49:35,772 [11] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-05-21 10:49:45,923 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 10:51:25,269 [12] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-05-21 10:51:35,364 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 12:00:39,200 [3] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-05-21 12:00:49,280 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 12:01:19,293 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:45:36,946 [3] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-05-21 13:45:45,875 [9] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-05-21 13:45:47,074 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:45:54,942 [9] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-05-21 13:46:06,418 [9] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-05-21 13:46:17,087 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:46:26,840 [9] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-05-21 13:46:42,229 [9] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-05-21 13:46:47,102 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:46:51,201 [9] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-05-21 13:47:17,115 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:47:47,135 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:48:17,149 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:48:47,162 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:49:17,173 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:49:47,185 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:50:17,203 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:50:47,218 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:51:17,231 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:51:47,243 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:52:17,255 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:52:47,271 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:53:17,286 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:53:47,302 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:54:17,314 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:54:47,327 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:55:17,344 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:55:47,361 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:55:53,033 [9] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-05-21 13:56:19,452 [6] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-05-21 13:56:29,548 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 13:56:59,563 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 14:00:44,818 [12] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-05-21 14:00:54,915 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 14:21:57,031 [12] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-05-21 14:22:01,208 [9] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-05-21 14:22:05,572 [9] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-05-21 14:22:07,131 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-05-21 14:47:52,998 [12] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-05-21 14:47:59,550 [9] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-05-21 14:48:03,119 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-08-22 13:51:06,933 [1] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-08-22 13:51:16,006 [4] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-08-22 13:51:24,830 [1] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-08-22 13:51:26,016 [8] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-08-22 13:51:30,213 [1] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-08-22 13:51:32,477 [1] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-08-22 13:51:34,501 [1] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-08-22 13:51:37,025 [1] INFO FlexInterfaceManager.MainWindow - FundCodeString:   
+2012-08-22 13:51:56,022 [8] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-08-22 13:52:26,027 [8] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-04 08:42:29,632 [3] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-12-04 08:42:39,760 [14] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-04 08:43:01,350 [9] ERROR FlexInterfaceManager.Manager.FundManager - System.ArgumentException: FromFundNo format is not correct
+   at FlexInterfaceManager.Manager.FundManager.ParseFundNoRange() in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\Manager\FundManager.cs:line 211
+   at FlexInterfaceManager.Manager.FundManager.GetFundNoStrByRange() in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\Manager\FundManager.cs:line 174
+2012-12-04 08:43:09,781 [14] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-05 08:35:16,031 [3] ERROR FlexInterfaceManager.ConnectManager - InitializeConnection Failed   System.InvalidOperationException: Client found response content type of 'text/html; charset=utf-8', but expected 'text/xml'.
+The request failed with the error message:
+--
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cannot open database "iExchange_V3" requested by the login. The login failed.<br>Login failed for user 'sa'.</title>
+        <meta name="viewport" content="width=device-width" />
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Consolas","Lucida Console",Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+         @media screen and (max-width: 639px) {
+          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }
+         }
+         @media screen and (max-width: 479px) {
+          pre { width: 280px; }
+         }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/FlexInterfaceService' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Cannot open database "iExchange_V3" requested by the login. The login failed.<br>Login failed for user 'sa'.</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.
+
+            <br><br>
+
+            <b> Exception Details: </b>System.Data.SqlClient.SqlException: Cannot open database "iExchange_V3" requested by the login. The login failed.<br>Login failed for user 'sa'.<br><br>
+
+            <b>Source Error:</b> <br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+Line 14:         public static void InitializeLocalSessionFactory(string connectionstr)
+Line 15:         {
+<font color=red>Line 16:             LocalSessionFactory = Fluently.Configure()
+</font>Line 17:                 .Database(MsSqlConfiguration.MsSql2008
+Line 18:                               .ConnectionString(connectionstr)</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b> Source File: </b> D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Repository\SessionManager.cs<b> ?? Line: </b> 16
+            <br><br>
+
+            <b>Stack Trace:</b> <br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+[SqlException (0x80131904): Cannot open database "iExchange_V3" requested by the login. The login failed.
+Login failed for user 'sa'.]
+   System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection) +414
+   System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection) +78
+   System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection) +167
+   System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions) +143
+   System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry) +83
+   System.Data.SqlClient.SqlConnection.Open() +96
+   NHibernate.Connection.DriverConnectionProvider.GetConnection() +112
+   NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare() +14
+   NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper) +84
+   NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory) +78
+   NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners) +700
+   NHibernate.Cfg.Configuration.BuildSessionFactory() +104
+   FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory() +75
+
+[FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+]
+   FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory() +120
+   FlexInterface.Repository.SessionManager.InitializeLocalSessionFactory(String connectionstr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Repository\SessionManager.cs:16
+   FlexInterfaceService.Global.Application_Start(Object sender, EventArgs e) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Global.asax.cs:23
+</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <hr width=100% size=1 color=silver>
+
+            <b>Version Information:</b>?Microsoft .NET Framework Version:4.0.30319; ASP.NET Version:4.0.30319.17929
+
+            </font>
+
+    </body>
+</html>
+<!-- 
+[SqlException]: Cannot open database "iExchange_V3" requested by the login. The login failed.
+Login failed for user 'sa'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   at NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   at NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   at NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   at NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   at NHibernate.Cfg.Configuration.BuildSessionFactory()
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+[FluentConfigurationException]: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+
+   at FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   at FlexInterface.Repository.SessionManager.InitializeLocalSessionFactory(String connectionstr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Repository\SessionManager.cs:line 16
+   at FlexInterfaceService.Global.Application_Start(Object sender, EventArgs e) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Global.asax.cs:line 23
+-->
+--.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at FlexInterfaceManager.FlexInterfaceService.StartupService.HelloWorld() in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\Web References\FlexInterfaceService\Reference.cs:line 78
+   at FlexInterfaceManager.ConnectManager.InitializeConnection(ConnectParamters parameters, DoWorkEventArgs s) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\BLL\ConnectManager.cs:line 33
+2012-12-05 08:35:45,436 [6] ERROR FlexInterfaceManager.ConnectManager - InitializeConnection Failed   System.ServiceModel.EndpointNotFoundException: Could not connect to net.tcp://ws0210:7555/FlexInterfaceService/Service.svc. The connection attempt lasted for a time span of 00:00:06.2556401. TCP error code 10061: No connection could be made because the target machine actively refused it 192.168.198.1:7555.  ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it 192.168.198.1:7555
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.ServiceModel.Channels.SocketConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.SocketConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   at System.ServiceModel.Channels.BufferedConnectionInitiator.Connect(Uri uri, TimeSpan timeout)
+   at System.ServiceModel.Channels.ConnectionPoolHelper.EstablishConnection(TimeSpan timeout)
+   at System.ServiceModel.Channels.ClientFramingDuplexSessionChannel.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.OnOpen(TimeSpan timeout)
+   at System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.CallOpenOnce.System.ServiceModel.Channels.ServiceChannel.ICallOnce.Call(ServiceChannel channel, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.CallOnceManager.CallOnce(TimeSpan timeout, CallOnceManager cascade)
+   at System.ServiceModel.Channels.ServiceChannel.EnsureOpened(TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at FlexInterface.Common.IFlexService.ConnectServer(String loginId, String pwd)
+   at FlexInterfaceManager.ConnectManager.InitializeConnection(ConnectParamters parameters, DoWorkEventArgs s) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\BLL\ConnectManager.cs:line 64
+2012-12-05 08:36:24,504 [6] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-12-05 08:39:47,700 [3] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-12-05 08:51:57,146 [3] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-12-05 08:52:07,240 [14] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-12 16:03:37,625 [6] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-12-12 16:03:47,761 [14] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-12 16:04:06,797 [9] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 4
+2012-12-12 16:04:17,795 [14] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-12 16:04:47,806 [14] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-12 16:05:17,823 [14] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-12 16:05:47,839 [14] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-12 16:06:17,857 [14] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-12 16:06:47,876 [14] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-12 16:07:17,967 [14] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:33:26,783 [6] ERROR FlexInterfaceManager.ConnectManager - InitializeConnection Failed   System.Net.WebException: The request failed with HTTP status 404: Not Found.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at FlexInterfaceManager.FlexInterfaceService.StartupService.HelloWorld() in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\Web References\FlexInterfaceService\Reference.cs:line 78
+   at FlexInterfaceManager.ConnectManager.InitializeConnection(ConnectParamters parameters, DoWorkEventArgs s) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\BLL\ConnectManager.cs:line 33
+2012-12-17 11:33:57,269 [6] ERROR FlexInterfaceManager.ConnectManager - InitializeConnection Failed   System.Net.WebException: The request failed with HTTP status 404: Not Found.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at FlexInterfaceManager.FlexInterfaceService.StartupService.HelloWorld() in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\Web References\FlexInterfaceService\Reference.cs:line 78
+   at FlexInterfaceManager.ConnectManager.InitializeConnection(ConnectParamters parameters, DoWorkEventArgs s) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\BLL\ConnectManager.cs:line 33
+2012-12-17 11:37:18,977 [6] ERROR FlexInterfaceManager.ConnectManager - InitializeConnection Failed   System.Net.WebException: The request failed with HTTP status 404: Not Found.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at FlexInterfaceManager.FlexInterfaceService.StartupService.HelloWorld() in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\Web References\FlexInterfaceService\Reference.cs:line 78
+   at FlexInterfaceManager.ConnectManager.InitializeConnection(ConnectParamters parameters, DoWorkEventArgs s) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\BLL\ConnectManager.cs:line 33
+2012-12-17 11:37:21,239 [13] ERROR FlexInterfaceManager.ConnectManager - InitializeConnection Failed   System.Net.WebException: The request failed with HTTP status 404: Not Found.
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at FlexInterfaceManager.FlexInterfaceService.StartupService.HelloWorld() in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\Web References\FlexInterfaceService\Reference.cs:line 78
+   at FlexInterfaceManager.ConnectManager.InitializeConnection(ConnectParamters parameters, DoWorkEventArgs s) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceManager\BLL\ConnectManager.cs:line 33
+2012-12-17 11:47:02,569 [6] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-12-17 11:47:12,701 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:47:15,402 [9] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 0
+2012-12-17 11:47:23,854 [9] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 0
+2012-12-17 11:47:25,102 [9] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 0
+2012-12-17 11:47:42,721 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:48:00,676 [9] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 4
+2012-12-17 11:48:12,740 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:48:21,943 [9] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 4
+2012-12-17 11:48:23,006 [9] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 4
+2012-12-17 11:48:26,944 [9] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 4
+2012-12-17 11:48:27,943 [9] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 4
+2012-12-17 11:48:42,754 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:49:13,076 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:49:43,461 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:50:13,487 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:50:43,778 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:51:14,162 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:51:44,547 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:52:14,932 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:52:45,310 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:53:15,734 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:53:46,127 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:54:16,504 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:54:46,897 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:55:17,274 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:55:47,714 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:56:18,123 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:56:48,515 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:57:18,893 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:57:49,268 [16] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:59:41,247 [6] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-12-17 11:59:51,331 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 11:59:51,675 [10] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 4
+2012-12-17 12:00:21,347 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:00:51,362 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:01:21,377 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:01:51,393 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:02:21,408 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:02:51,423 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:03:21,439 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:03:51,454 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:04:21,470 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:04:51,484 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:05:21,499 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:05:51,514 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:06:21,529 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:06:51,544 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:07:21,558 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:07:51,573 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:08:21,588 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:08:51,603 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:09:21,617 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:09:51,632 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:10:21,647 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:10:51,661 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:11:21,676 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:11:51,690 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:12:21,705 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:12:51,720 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:13:21,734 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:13:51,749 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:14:21,763 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:14:51,778 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:15:21,792 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:15:51,807 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:16:21,821 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:16:51,839 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:17:21,858 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:17:51,876 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:18:21,895 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:18:51,913 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:19:21,932 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:19:51,966 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:20:21,985 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:20:52,004 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:21:22,022 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:21:52,039 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:22:22,055 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:22:52,087 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:23:22,103 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:23:52,119 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:24:22,151 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:24:52,167 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:25:22,183 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:25:52,199 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:26:22,215 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:26:52,231 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:27:22,262 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:27:52,277 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:28:22,292 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:28:52,323 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:29:22,354 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:29:52,401 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:30:22,416 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:30:52,432 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:31:22,447 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:31:52,462 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:32:22,477 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:32:52,507 [17] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:38:13,030 [6] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-12-17 12:38:23,108 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:38:24,060 [10] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 3
+2012-12-17 12:38:53,123 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:39:23,138 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:39:53,153 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:40:23,168 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:40:53,183 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:41:23,198 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:41:53,229 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:42:23,275 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 12:42:53,305 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 14:07:25,414 [6] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-12-17 14:07:35,476 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 14:07:47,211 [11] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 3
+2012-12-17 14:08:05,496 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 14:08:35,512 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 14:08:58,582 [11] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 4
+2012-12-17 14:09:05,540 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 14:09:35,555 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 14:10:05,570 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-17 14:10:35,586 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 10:52:33,151 [6] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-12-21 10:52:43,285 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 10:52:58,490 [10] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 1
+2012-12-21 10:53:13,293 [18] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:00:46,701 [5] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-12-21 11:00:56,787 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:01:05,182 [1] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 1
+2012-12-21 11:01:23,810 [1] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 1
+2012-12-21 11:01:26,794 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:01:56,796 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:01:57,341 [1] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 1
+2012-12-21 11:02:26,800 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:02:56,803 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:03:26,805 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:26:44,334 [5] WARN FlexInterfaceManager.ConnectManager - InitializeConnection Success!
+2012-12-21 11:26:54,406 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:27:02,069 [1] INFO FlexInterfaceManager.Manager.FundManager - GetDepositCode: 1
+2012-12-21 11:27:24,414 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:27:54,421 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:28:24,424 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:28:54,435 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:29:24,441 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:29:54,446 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:30:24,452 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:30:54,458 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:31:24,465 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:31:54,470 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:32:24,474 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!
+2012-12-21 11:32:54,481 [10] WARN FlexInterfaceManager.AliveKeeper - Keep Alive Called!

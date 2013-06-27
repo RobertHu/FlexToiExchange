@@ -1,0 +1,5 @@
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Common\bin\Debug\FlexInterface.Common.dll
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Common\bin\Debug\FlexInterface.Common.pdb
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Common\obj\Debug\FlexInterface.Common.dll
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Common\obj\Debug\FlexInterface.Common.pdb

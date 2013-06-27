@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\Work\WfFlex\FlexInterfaceService" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/FlexInterface.Helper.dll" publishTime="03/21/2013 08:25:42" />
+    <file relUrl="Lib/Util2.dll" publishTime="04/10/2012 09:10:49" />
+    <file relUrl="Global.asax" publishTime="03/05/2012 15:29:50" />
+    <file relUrl="bin/log4net.dll" publishTime="03/26/2012 08:08:11" />
+    <file relUrl="Lib/note.txt" publishTime="03/22/2012 17:23:52" />
+    <file relUrl="About.aspx" publishTime="03/05/2012 15:29:50" />
+    <file relUrl="bin/FlexInterface.Common.dll" publishTime="03/21/2013 08:25:38" />
+    <file relUrl="bin/Iesi.Collections.dll" publishTime="08/15/2012 08:20:51" />
+    <file relUrl="bin/NHibernate.dll" publishTime="08/15/2012 08:20:51" />
+    <file relUrl="Lib/Iesi.Collections.dll" publishTime="08/15/2012 08:20:51" />
+    <file relUrl="bin/Framework.pdb" publishTime="08/26/2010 10:45:36" />
+    <file relUrl="Lib/FluentNHibernate.dll" publishTime="08/15/2012 08:20:51" />
+    <file relUrl="bin/iExchange.Common.pdb" publishTime="03/21/2013 08:26:13" />
+    <file relUrl="UserStorage.xml" publishTime="03/21/2013 08:35:36" />
+    <file relUrl="Default.aspx" publishTime="03/05/2012 15:29:50" />
+    <file relUrl="bin/Framework.dll" publishTime="08/26/2010 10:45:36" />
+    <file relUrl="Lib/Ionic.Zip.dll" publishTime="04/10/2012 08:24:43" />
+    <file relUrl="Lib/log4net.dll" publishTime="03/26/2012 08:08:11" />
+    <file relUrl="bin/FlexInterfaceService.dll" publishTime="03/21/2013 08:35:44" />
+    <file relUrl="Lib/NHibernate.dll" publishTime="08/15/2012 08:20:51" />
+    <file relUrl="Service.svc" publishTime="03/06/2012 10:26:23" />
+    <file relUrl="StartupService.asmx" publishTime="03/06/2012 11:01:25" />
+    <file relUrl="Web.config" publishTime="11/23/2012 15:25:24" />
+    <file relUrl="bin/iExchange.Common.dll" publishTime="03/21/2013 08:26:13" />
+    <file relUrl="bin/FlexInterface.Common.pdb" publishTime="03/21/2013 08:25:38" />
+    <file relUrl="bin/FluentNHibernate.dll" publishTime="08/15/2012 08:20:51" />
+    <file relUrl="bin/FlexInterface.Repository.pdb" publishTime="03/21/2013 08:25:38" />
+    <file relUrl="bin/FlexInterface.Helper.pdb" publishTime="03/21/2013 08:25:42" />
+    <file relUrl="bin/FlexInterfaceService.pdb" publishTime="03/21/2013 08:35:44" />
+    <file relUrl="bin/FlexInterface.Repository.dll" publishTime="03/21/2013 08:25:39" />
+  </publishProfile>
+</publishData>

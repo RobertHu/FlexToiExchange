@@ -1,0 +1,13 @@
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\bin\Release\FlexInterface.Helper.XML
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\bin\Release\FlexInterface.Helper.dll
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\bin\Release\FlexInterface.Helper.pdb
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\bin\Release\FlexInterface.Common.dll
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\bin\Release\FlexInterface.Repository.dll
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\bin\Release\FluentNHibernate.dll
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\bin\Release\NHibernate.dll
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\bin\Release\Iesi.Collections.dll
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\bin\Release\FlexInterface.Common.pdb
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\bin\Release\FlexInterface.Repository.pdb
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\obj\Release\FlexInterface.Helper.dll
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\obj\Release\FlexInterface.Helper.pdb
+D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\obj\Release\ResolveAssemblyReference.cache
