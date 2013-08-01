@@ -23,7 +23,14 @@ namespace FlexInterfaceManager.Model
                             .Aggregate((IEnumerable<AccountModel>)new List<AccountModel>(), (acc, m) => acc.Concat(m));
             
             var result2 =  result1.Where(a => a.IsChecked);
-            var result = result2.Aggregate(string.Empty, (r, n) => r + "," + n.AccountCode, r => r.Length > 0 ? r.Substring(1) : r);
+            var result = result2.Aggregate(string.Empty, (r, n) => 
+                {
+                    if (string.IsNullOrEmpty(n.AccountCode))
+                    {
+                        return r;
+                    }
+                    return r + "," + n.AccountCode;
+                }, r => r.Length > 0 ? r.Substring(1) : r);
             DebugHelper.Log(result);
             return result;
         }

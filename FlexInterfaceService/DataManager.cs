@@ -22,7 +22,7 @@ namespace FlexInterfaceService
         {
             _AccountService = new AccountService();
             _DepositService = new DepositService();
-            _PLService = new PLService(this._AccountService);
+            _PLService = new PLService();
         }
         public static DataManager Default
         {
@@ -42,20 +42,10 @@ namespace FlexInterfaceService
             return _AccountService.GetAllAccountCode();
         }
 
-       
-
-
         public int? GetExchangePlAccount()
         {
             return _AccountService.GetExchangePlAccount();
         }
-
-
-
-
-
-
-
 
         public QueryPageCountResult GetDepositPageCount(string sessionID, QueryObject data)
         {

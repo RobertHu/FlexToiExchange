@@ -1,557 +1,89 @@
-2012-12-12 16:08:25,369 [3] WARN FlexInterfaceService.Global - Application Start
-2012-12-12 16:08:28,242 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-12 16:08:29,590 [6] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-12 16:08:42,646 [6] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','0'
-2012-12-12 16:08:42,663 [6] INFO FlexInterfaceService.AccountService - GetAllFundNo count:4
-2012-12-12 16:08:47,976 [6] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','1'
-2012-12-12 16:08:48,036 [6] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','0'
-2012-12-12 16:08:48,048 [6] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 4
-2012-12-12 16:08:48,238 [6] ERROR NHibernate.Util.ADOExceptionReporter - Value cannot be null.
-Parameter name: item
-2012-12-12 16:08:48,241 [6] ERROR FlexInterfaceService.DepositService - GetDepositData  NHibernate.Exceptions.GenericADOException: Could not execute query[SQL: SQL not available] ---> System.ArgumentNullException: Value cannot be null.
-Parameter name: item
-   at System.ThrowHelper.IfNullAndNullsAreIllegalThenThrow[T](Object value, ExceptionArgument argName)
-   at System.Collections.Generic.List`1.System.Collections.IList.Add(Object item)
-   at NHibernate.Util.ArrayHelper.<>c__DisplayClass2.<AddAll>b__0()
-   at NHibernate.Util.ArrayHelper.AddAll(IList to, IList from)
-   at NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
-   at NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
-   --- End of inner exception stack trace ---
-   at NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
-   at NHibernate.Impl.AbstractSessionImpl.List(IQueryExpression queryExpression, QueryParameters parameters)
-   at NHibernate.Impl.ExpressionQueryImpl.List()
-   at NHibernate.Linq.DefaultQueryProvider.ExecuteQuery(NhLinqExpression nhLinqExpression, IQuery query, NhLinqExpression nhQuery)
-   at NHibernate.Linq.DefaultQueryProvider.Execute(Expression expression)
-   at NHibernate.Linq.DefaultQueryProvider.Execute[TResult](Expression expression)
-   at System.Linq.Queryable.Max[TSource](IQueryable`1 source)
-   at FlexInterface.Repository.DataRepository.GetAccountingRate(Guid sourceCurrencyId, Guid targetCurrencyId) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Repository\DataRepository.cs:line 79
-   at FlexInterface.Helper.DepositInnerService.AddDesc(BusinessTypeEnum businessType, DepositData data) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\DepositInnerService.fs:line 38
-   at FlexInterfaceService.DepositService.GetDepositPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DepositService.cs:line 62
-2012-12-12 16:17:07,145 [11] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','1'
-2012-12-12 16:17:07,192 [11] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','0'
-2012-12-12 16:17:07,217 [11] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 4
-2012-12-12 16:17:07,277 [11] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 4
-2012-12-12 16:21:01,157 [23] WARN FlexInterfaceService.Global - Application End
-2012-12-12 16:21:11,669 [19] WARN FlexInterfaceService.Global - Application Start
-2012-12-12 16:21:14,465 [19] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-12 16:21:15,772 [17] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-12 16:21:27,769 [17] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','0'
-2012-12-12 16:21:27,782 [17] INFO FlexInterfaceService.AccountService - GetAllFundNo count:4
-2012-12-12 16:21:34,645 [17] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','1'
-2012-12-12 16:21:34,700 [17] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','0'
-2012-12-12 16:21:34,715 [17] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 4
-2012-12-12 16:21:34,957 [17] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 4
-2012-12-12 16:23:17,914 [17] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','1'
-2012-12-12 16:23:17,924 [17] INFO FlexInterfaceService.AccountService - GetAllFundNo count:3
-2012-12-12 16:23:27,103 [17] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','0D384606E,45C6BC71B,CE4563FD4','1','1'
-2012-12-12 16:23:27,145 [17] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','0D384606E,45C6BC71B,CE4563FD4','1','0'
-2012-12-12 16:23:27,158 [17] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 3
-2012-12-12 16:23:27,188 [17] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 3
-2012-12-12 16:25:23,812 [17] ERROR FlexInterfaceService.Service - GetPLDataRecordCount  System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
-   at iExchange.Common.DataAccess.ExecuteScalar(String sql, String connectionString) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\Common\DataAccess.cs:line 177
-   at FlexInterfaceService.PLService.GetPLDataRecordCount(QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 37
-   at FlexInterfaceService.DataManager.GetPLDataRecordCount(QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DataManager.cs:line 90
-   at FlexInterfaceService.Service.FlexInterface.Common.IPLService.GetPLDataRecordCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Service.svc.cs:line 203
-ClientConnectionId:aeb69ada-cf11-4a40-8a8b-05070a25c45b
-2012-12-12 16:25:23,852 [17] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2012/12/10','2012/12/12','test1','1','0' 
-2012-12-12 16:25:37,002 [15] ERROR FlexInterfaceService.Service - GetPLDataRecordCount  System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
-   at iExchange.Common.DataAccess.ExecuteScalar(String sql, String connectionString) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\Common\DataAccess.cs:line 177
-   at FlexInterfaceService.PLService.GetPLDataRecordCount(QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 37
-   at FlexInterfaceService.DataManager.GetPLDataRecordCount(QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DataManager.cs:line 90
-   at FlexInterfaceService.Service.FlexInterface.Common.IPLService.GetPLDataRecordCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Service.svc.cs:line 203
-ClientConnectionId:6fb4f060-660b-436a-9457-9eaac2bc6a03
-2012-12-12 16:25:37,015 [15] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2012/12/10','2012/12/12','test1','1','0' 
-2012-12-12 16:25:58,656 [15] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:2
-2012-12-12 16:25:58,656 [17] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:2
-2012-12-12 16:25:58,661 [17] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
+2013-07-17 08:15:01,185 [3] WARN FlexInterfaceService.Global - Application Start
+2013-07-17 08:15:06,029 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
+2013-07-17 08:15:17,789 [13] WARN FlexInterfaceService.Service - ConnectServer
+2013-07-17 08:15:54,764 [10] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/09','2013/07/17','nancy1','4','0' 
+2013-07-17 08:15:55,326 [10] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:0
+2013-07-17 08:15:55,326 [10] INFO FlexInterfaceService.PLService - Final Data quantity: 0
+2013-07-17 08:22:43,362 [18] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/09','2013/07/17','C02,c03,nancy1,nancy10,nancy11,nancy12,nancy13,nancy14,nancy2,nancy3,nancy4,nancy5,nancy6,nancy7,nancy8,nancy9,test80,test81,tss1,tss2','4','0' 
+2013-07-17 08:22:46,011 [18] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:5
+2013-07-17 08:22:46,027 [18] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
 Parameter name: AccountingMappingCode
    at FlexInterfaceService.InterestStorageLevyCommissionFactoryBase.CreateHelper(DataRow dr, PLData data) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\InterestStorageLevyCommissionFactoryBase.cs:line 16
-   at FlexInterfaceService.FloatingPlDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\FloatingPlDataFactory.cs:line 14
-   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 60
-   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 99
-2012-12-12 16:25:58,661 [15] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
+   at FlexInterfaceService.ComissionPLDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\ComissionPLDataFactory.cs:line 13
+   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 63
+   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 93
+2013-07-17 09:33:31,585 [10] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/09','2013/07/17','C02,c03,nancy1,nancy10,nancy11,nancy12,nancy13,nancy14,nancy2,nancy3,nancy4,nancy5,nancy6,nancy7,nancy8,nancy9,test80,test81,tss1,tss2','4','0' 
+2013-07-17 09:33:34,378 [10] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:5
+2013-07-17 09:33:34,378 [10] INFO FlexInterfaceService.PLService - Final Data quantity: 4
+2013-07-17 09:34:59,354 [10] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/09','2013/07/17','C02,c03,nancy1,nancy10,nancy11,nancy12,nancy13,nancy14,nancy2,nancy3,nancy4,nancy5,nancy6,nancy7,nancy8,nancy9,test80,test81,tss1,tss2','5','0' 
+2013-07-17 09:35:02,381 [10] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:5
+2013-07-17 09:35:02,381 [10] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
 Parameter name: AccountingMappingCode
    at FlexInterfaceService.InterestStorageLevyCommissionFactoryBase.CreateHelper(DataRow dr, PLData data) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\InterestStorageLevyCommissionFactoryBase.cs:line 16
-   at FlexInterfaceService.FloatingPlDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\FloatingPlDataFactory.cs:line 14
-   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 60
-   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 99
-2012-12-12 16:26:09,949 [15] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2012/12/10','2012/12/12','test1','1','0' 
-2012-12-12 16:26:12,244 [15] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:2
-2012-12-12 16:26:12,246 [15] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
+   at FlexInterfaceService.LevyPLDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\LevyPLDataFactory.cs:line 13
+   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 66
+   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 93
+2013-07-17 09:40:25,400 [10] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/09','2013/07/17','C02,c03,nancy1,nancy10,nancy11,nancy12,nancy13,nancy14,nancy2,nancy3,nancy4,nancy5,nancy6,nancy7,nancy8,nancy9,test80,test81,tss1,tss2','5','0' 
+2013-07-17 09:40:27,865 [10] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:5
+2013-07-17 09:40:27,865 [10] INFO FlexInterfaceService.PLService - Final Data quantity: 4
+2013-07-17 09:42:19,611 [90] WARN FlexInterfaceService.Global - Application End
+2013-07-17 09:42:45,610 [92] WARN FlexInterfaceService.Global - Application Start
+2013-07-17 09:42:48,059 [92] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
+2013-07-17 09:42:49,620 [88] WARN FlexInterfaceService.Service - ConnectServer
+2013-07-17 09:43:20,192 [88] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/09','2013/07/17',',,,,,,,,,,,,,,,,,,,,C02,c03,nancy1,nancy10,nancy11,nancy12,nancy13,nancy14,nancy2,nancy3,nancy4,nancy5,nancy6,nancy7,nancy8,nancy9,test80,test81,tss1,tss2,,,,,,,,,,,,,,','5','0' 
+2013-07-17 09:43:22,470 [88] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:5
+2013-07-17 09:43:22,470 [88] INFO FlexInterfaceService.PLService - Final Data quantity: 4
+2013-07-17 09:43:59,435 [93] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/09','2013/07/17',',,,,,,,,,,,,,,,,,,,,C02,c03,nancy1,nancy10,nancy11,nancy12,nancy13,nancy14,nancy2,nancy3,nancy4,nancy5,nancy6,nancy7,nancy8,nancy9,test80,test81,tss1,tss2,,,,,,,,,,,,,,','2','0' 
+2013-07-17 09:44:09,280 [93] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:35
+2013-07-17 09:44:09,280 [93] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
 Parameter name: AccountingMappingCode
    at FlexInterfaceService.InterestStorageLevyCommissionFactoryBase.CreateHelper(DataRow dr, PLData data) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\InterestStorageLevyCommissionFactoryBase.cs:line 16
-   at FlexInterfaceService.FloatingPlDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\FloatingPlDataFactory.cs:line 14
-   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 60
-   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 99
-2012-12-12 16:26:19,866 [15] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2012/12/10','2012/12/12','test1','1','0' 
-2012-12-12 16:26:21,999 [15] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:2
-2012-12-12 16:26:21,999 [15] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
+   at FlexInterfaceService.InterestPLDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\InterestPLDataFactory.cs:line 14
+   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 57
+   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 93
+2013-07-17 09:45:19,787 [76] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/16','2013/07/17',',,,,,,,,,,,,,,,,,,,,C02,c03,nancy1,nancy10,nancy11,nancy12,nancy13,nancy14,nancy2,nancy3,nancy4,nancy5,nancy6,nancy7,nancy8,nancy9,test80,test81,tss1,tss2,,,,,,,,,,,,,,','2','0' 
+2013-07-17 09:45:21,066 [76] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:34
+2013-07-17 09:45:21,066 [76] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
 Parameter name: AccountingMappingCode
    at FlexInterfaceService.InterestStorageLevyCommissionFactoryBase.CreateHelper(DataRow dr, PLData data) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\InterestStorageLevyCommissionFactoryBase.cs:line 16
-   at FlexInterfaceService.FloatingPlDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\FloatingPlDataFactory.cs:line 14
-   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 60
-   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 99
-2012-12-12 16:26:30,829 [15] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2012/12/10','2012/12/12','test1','1','0' 
-2012-12-12 16:26:33,119 [15] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:2
-2012-12-12 16:26:33,122 [15] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
+   at FlexInterfaceService.InterestPLDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\InterestPLDataFactory.cs:line 14
+   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 57
+   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 93
+2013-07-17 09:46:29,766 [75] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/16','2013/07/17',',,,,,,,,,,,,,,,,,,,,nancy1,,,,,,,,,,,,,,','2','0' 
+2013-07-17 09:46:30,857 [75] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:11
+2013-07-17 09:46:30,857 [75] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
 Parameter name: AccountingMappingCode
    at FlexInterfaceService.InterestStorageLevyCommissionFactoryBase.CreateHelper(DataRow dr, PLData data) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\InterestStorageLevyCommissionFactoryBase.cs:line 16
-   at FlexInterfaceService.FloatingPlDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\FloatingPlDataFactory.cs:line 14
-   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 60
-   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 99
-2012-12-12 16:28:16,053 [25] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-12 16:32:19,374 [8] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-12 16:32:35,557 [8] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2012/12/10','2012/12/12','test1','1','0' 
-2012-12-12 16:32:37,719 [8] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:2
-2012-12-12 16:32:37,719 [8] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
+   at FlexInterfaceService.InterestPLDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\InterestPLDataFactory.cs:line 14
+   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 57
+   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 93
+2013-07-17 09:49:57,783 [67] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/16','2013/07/17',',,,,,,,,,,,,,,,,,,,,nancy1,,,,,,,,,,,,,,','2','0' 
+2013-07-17 09:49:58,610 [67] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:11
+2013-07-17 09:49:58,610 [67] INFO FlexInterfaceService.PLService - Final Data quantity: 7
+2013-07-17 09:53:46,277 [59] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/16','2013/07/17',',,,,,,,,,,,,,,,,,,,,nancy1,,,,,,,,,,,,,,','3','0' 
+2013-07-17 09:53:47,213 [59] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:11
+2013-07-17 09:53:47,213 [59] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
 Parameter name: AccountingMappingCode
    at FlexInterfaceService.InterestStorageLevyCommissionFactoryBase.CreateHelper(DataRow dr, PLData data) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\InterestStorageLevyCommissionFactoryBase.cs:line 16
-   at FlexInterfaceService.FloatingPlDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\FloatingPlDataFactory.cs:line 14
+   at FlexInterfaceService.StoragePlDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\StoragePlDataFactory.cs:line 13
    at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 60
-   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 99
-2012-12-12 16:37:27,109 [28] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2012/12/10','2012/12/12','test1','1','0' 
-2012-12-12 16:37:29,334 [28] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:2
-2012-12-12 16:37:29,339 [28] INFO FlexInterfaceService.PLService - Final Data quantity: 1
-2012-12-12 16:56:53,202 [31] WARN FlexInterfaceService.Global - Application End
-2012-12-17 11:46:14,143 [3] WARN FlexInterfaceService.Global - Application Start
-2012-12-17 11:46:18,250 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-17 11:47:02,116 [11] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-17 11:47:15,293 [11] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/12/10 00:00:00','2012/12/17 23:59:59','test2','0'
-2012-12-17 11:47:15,387 [11] INFO FlexInterfaceService.AccountService - GetAllFundNo count:0
-2012-12-17 11:47:23,822 [11] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/11/10 00:00:00','2012/12/17 23:59:59','test2','0'
-2012-12-17 11:47:23,822 [11] INFO FlexInterfaceService.AccountService - GetAllFundNo count:0
-2012-12-17 11:47:25,071 [11] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/11/10 00:00:00','2012/12/17 23:59:59','test2','0'
-2012-12-17 11:47:25,087 [11] INFO FlexInterfaceService.AccountService - GetAllFundNo count:0
-2012-12-17 11:48:00,661 [6] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/11/10 00:00:00','2012/12/17 23:59:59','test1','0'
-2012-12-17 11:48:00,661 [6] INFO FlexInterfaceService.AccountService - GetAllFundNo count:4
-2012-12-17 11:48:07,559 [6] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/11/10 00:00:00','2012/12/17 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','1'
-2012-12-17 11:48:08,042 [6] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/11/10 00:00:00','2012/12/17 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','0'
-2012-12-17 11:48:08,058 [6] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 4
-2012-12-17 11:48:08,183 [6] ERROR FlexInterfaceService.DepositService - GetDepositData  System.ArgumentException: Column 'BankName' does not belong to table Table.
-   at System.Data.DataRow.GetDataColumn(String columnName)
-   at System.Data.DataRow.get_Item(String columnName)
-   at FlexInterfaceService.DataRowExtension.EscapeDBNULL[T](DataRow dr, String columnName) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DataRowExtension.cs:line 13
-   at FlexInterfaceService.DepositService.Fill(DataRow dr, String baseCurrencyName, BusinessTypeEnum businessType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DepositService.cs:line 132
-   at FlexInterfaceService.DepositService.GetDepositPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DepositService.cs:line 52
-2012-12-17 11:48:21,928 [6] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/12/10 00:00:00','2012/12/17 23:59:59','test1','0'
-2012-12-17 11:48:21,928 [6] INFO FlexInterfaceService.AccountService - GetAllFundNo count:4
-2012-12-17 11:48:22,974 [6] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/12/10 00:00:00','2012/12/17 23:59:59','test1','0'
-2012-12-17 11:48:22,974 [6] INFO FlexInterfaceService.AccountService - GetAllFundNo count:4
-2012-12-17 11:48:26,913 [6] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','0'
-2012-12-17 11:48:26,913 [6] INFO FlexInterfaceService.AccountService - GetAllFundNo count:4
-2012-12-17 11:48:27,912 [6] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','0'
-2012-12-17 11:48:27,927 [6] INFO FlexInterfaceService.AccountService - GetAllFundNo count:4
-2012-12-17 11:48:35,154 [6] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','1'
-2012-12-17 11:48:35,310 [6] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','0'
-2012-12-17 11:48:35,325 [6] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 4
-2012-12-17 11:48:35,325 [6] ERROR FlexInterfaceService.DepositService - GetDepositData  System.ArgumentException: Column 'BankName' does not belong to table Table.
-   at System.Data.DataRow.GetDataColumn(String columnName)
-   at System.Data.DataRow.get_Item(String columnName)
-   at FlexInterfaceService.DataRowExtension.EscapeDBNULL[T](DataRow dr, String columnName) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DataRowExtension.cs:line 13
-   at FlexInterfaceService.DepositService.Fill(DataRow dr, String baseCurrencyName, BusinessTypeEnum businessType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DepositService.cs:line 132
-   at FlexInterfaceService.DepositService.GetDepositPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DepositService.cs:line 52
-2012-12-17 11:50:06,152 [22] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','1'
-2012-12-17 11:50:06,620 [22] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/12 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','0'
-2012-12-17 11:50:06,636 [22] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 4
-2012-12-17 11:50:06,916 [22] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 4
-2012-12-17 11:58:22,809 [36] WARN FlexInterfaceService.Global - Application End
-2012-12-17 11:59:35,179 [3] WARN FlexInterfaceService.Global - Application Start
-2012-12-17 11:59:37,597 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-17 11:59:40,935 [7] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-17 11:59:51,643 [7] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/12/10 00:00:00','2012/12/17 23:59:59','test1','0'
-2012-12-17 11:59:51,659 [7] INFO FlexInterfaceService.AccountService - GetAllFundNo count:4
-2012-12-17 11:59:57,478 [7] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/17 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','1'
-2012-12-17 11:59:57,681 [7] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/17 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','0'
-2012-12-17 11:59:57,696 [7] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 4
-2012-12-17 11:59:58,024 [7] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 4
-2012-12-17 12:38:12,842 [52] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-17 12:38:24,044 [52] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/12/10 00:00:00','2012/12/17 23:59:59','test1','1'
-2012-12-17 12:38:24,044 [52] INFO FlexInterfaceService.AccountService - GetAllFundNo count:3
-2012-12-17 12:38:29,676 [52] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/17 23:59:59','test1','0D384606E,45C6BC71B,CE4563FD4','1','1'
-2012-12-17 12:38:29,894 [52] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/17 23:59:59','test1','0D384606E,45C6BC71B,CE4563FD4','1','0'
-2012-12-17 12:38:29,910 [52] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 3
-2012-12-17 12:38:29,957 [52] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 3
-2012-12-17 12:43:00,325 [47] WARN FlexInterfaceService.Global - Application End
-2012-12-17 14:07:20,609 [3] WARN FlexInterfaceService.Global - Application Start
-2012-12-17 14:07:23,651 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-17 14:07:25,242 [12] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-17 14:07:47,164 [12] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/12/10 00:00:00','2012/12/17 23:59:59','test1','1'
-2012-12-17 14:07:47,180 [12] INFO FlexInterfaceService.AccountService - GetAllFundNo count:3
-2012-12-17 14:07:53,264 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/17 23:59:59','test1','0D384606E,45C6BC71B,CE4563FD4','1','1'
-2012-12-17 14:07:53,437 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/17 23:59:59','test1','0D384606E,45C6BC71B,CE4563FD4','1','0'
-2012-12-17 14:07:53,453 [12] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 3
-2012-12-17 14:07:53,671 [12] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 3
-2012-12-17 14:08:58,551 [12] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/12/10 00:00:00','2012/12/17 23:59:59','test1','0'
-2012-12-17 14:08:58,551 [12] INFO FlexInterfaceService.AccountService - GetAllFundNo count:4
-2012-12-17 14:09:05,680 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/17 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','1'
-2012-12-17 14:09:05,883 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2012/12/10 00:00:00','2012/12/17 23:59:59','test1','2535A1C98,27A683AF7,9C209BBAA,F3F902D99','0','0'
-2012-12-17 14:09:05,899 [12] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 4
-2012-12-17 14:09:05,946 [12] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 4
-2012-12-17 14:31:20,172 [3] WARN FlexInterfaceService.Global - Application End
-2012-12-21 09:00:41,738 [3] WARN FlexInterfaceService.Global - Application Start
-2012-12-21 09:00:46,481 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-21 09:00:49,445 [12] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 09:08:02,888 [21] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/12/26 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,','0'
-2012-12-21 09:08:03,091 [21] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 09:08:12,092 [21] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/12/26 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,','A2222384','0','1'
-2012-12-21 09:08:12,622 [21] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/12/26 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,','A2222384','0','0'
-2012-12-21 09:08:12,685 [21] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 09:08:12,809 [21] ERROR FlexInterfaceService.DepositService - GetDepositData  System.ArgumentException: Column 'BankName' does not belong to table Table.
-   at System.Data.DataRow.GetDataColumn(String columnName)
-   at System.Data.DataRow.get_Item(String columnName)
-   at FlexInterfaceService.DataRowExtension.EscapeDBNULL[T](DataRow dr, String columnName) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DataRowExtension.cs:line 13
-   at FlexInterfaceService.DepositService.Fill(DataRow dr, String baseCurrencyName, BusinessTypeEnum businessType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DepositService.cs:line 132
-   at FlexInterfaceService.DepositService.GetDepositPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DepositService.cs:line 56
-2012-12-21 09:09:19,640 [12] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/12/26 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,','0'
-2012-12-21 09:09:19,640 [12] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 09:09:35,474 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/12/26 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,','A2222384','0','1'
-2012-12-21 09:09:36,052 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/12/26 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,','A2222384','0','0'
-2012-12-21 09:09:36,083 [12] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 09:09:36,161 [12] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 09:11:57,763 [31] WARN FlexInterfaceService.Global - Application End
-2012-12-21 09:12:14,888 [31] WARN FlexInterfaceService.Global - Application Start
-2012-12-21 09:12:17,728 [31] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-21 09:12:19,507 [24] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 09:12:45,705 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/03 00:00:00','2012/12/21 23:59:59','ts11','0'
-2012-12-21 09:12:45,736 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 09:12:54,176 [24] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/03 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','1'
-2012-12-21 09:12:54,363 [24] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/03 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','0'
-2012-12-21 09:12:54,378 [24] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 09:12:54,753 [24] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 09:26:21,880 [33] WARN FlexInterfaceService.Global - Application End
-2012-12-21 09:26:50,905 [14] WARN FlexInterfaceService.Global - Application Start
-2012-12-21 09:26:53,869 [14] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-21 09:26:55,710 [13] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 09:27:14,754 [13] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/09 00:00:00','2012/12/21 23:59:59','ts11','0'
-2012-12-21 09:27:14,770 [13] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 09:27:20,807 [13] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/09 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','1'
-2012-12-21 09:27:21,010 [13] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/09 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','0'
-2012-12-21 09:27:21,025 [13] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 09:27:21,150 [13] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 09:27:59,949 [11] WARN FlexInterfaceService.Global - Application End
-2012-12-21 09:28:23,629 [14] WARN FlexInterfaceService.Global - Application Start
-2012-12-21 09:28:26,500 [14] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-21 09:28:28,309 [32] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 09:28:48,654 [32] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/03 00:00:00','2012/12/21 23:59:59','ts11','0'
-2012-12-21 09:28:48,669 [32] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 09:28:55,065 [32] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/03 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','1'
-2012-12-21 09:28:55,253 [32] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/03 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','0'
-2012-12-21 09:28:55,268 [32] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 09:28:55,409 [32] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 09:30:26,795 [11] WARN FlexInterfaceService.Global - Application End
-2012-12-21 09:30:47,933 [20] WARN FlexInterfaceService.Global - Application Start
-2012-12-21 09:30:50,897 [20] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-21 09:30:52,552 [28] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 09:31:08,511 [28] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/09 00:00:00','2012/12/21 23:59:59','ts11','0'
-2012-12-21 09:31:08,527 [28] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 09:31:14,689 [28] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/09 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','1'
-2012-12-21 09:31:14,892 [28] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/09 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','0'
-2012-12-21 09:31:14,908 [28] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 09:31:15,048 [28] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 09:32:29,244 [16] WARN FlexInterfaceService.Global - Application End
-2012-12-21 09:32:52,909 [31] WARN FlexInterfaceService.Global - Application Start
-2012-12-21 09:32:55,842 [31] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-21 09:32:57,496 [30] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 09:33:18,117 [30] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/10 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','0'
-2012-12-21 09:33:18,132 [30] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 09:33:24,528 [30] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/10 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','A2222384','0','1'
-2012-12-21 09:33:24,716 [30] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/10 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','A2222384','0','0'
-2012-12-21 09:33:24,748 [30] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 09:33:24,935 [30] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 09:38:05,280 [27] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/10 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','A2222384','0','1'
-2012-12-21 09:38:05,436 [27] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/10 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','A2222384','0','0'
-2012-12-21 09:38:05,482 [27] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 09:38:05,592 [27] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 09:38:28,494 [19] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/10 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','A2222384','0','1'
-2012-12-21 09:38:28,666 [19] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/10 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','A2222384','0','0'
-2012-12-21 09:38:28,681 [19] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 09:38:28,697 [19] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 09:44:45,444 [35] WARN FlexInterfaceService.Global - Application End
-2012-12-21 09:46:14,057 [34] WARN FlexInterfaceService.Global - Application Start
-2012-12-21 09:46:17,021 [34] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-21 09:46:18,503 [32] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 09:46:37,083 [32] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/03 00:00:00','2012/12/21 23:59:59','ts11','0'
-2012-12-21 09:46:37,098 [32] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 09:46:41,296 [32] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/03 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','1'
-2012-12-21 09:46:41,514 [32] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/03 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','0'
-2012-12-21 09:46:41,530 [32] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 09:46:41,701 [32] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 09:47:23,417 [11] WARN FlexInterfaceService.Global - Application End
-2012-12-21 09:47:49,879 [11] WARN FlexInterfaceService.Global - Application Start
-2012-12-21 09:47:52,843 [11] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-21 09:47:54,559 [32] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 09:48:13,280 [32] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/02 00:00:00','2012/12/21 23:59:59','ts11','0'
-2012-12-21 09:48:13,296 [32] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 09:48:19,708 [32] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/02 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','1'
-2012-12-21 09:48:19,895 [32] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/02 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','0'
-2012-12-21 09:48:19,911 [32] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 09:48:20,098 [32] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 09:51:58,051 [27] WARN FlexInterfaceService.Global - Application End
-2012-12-21 09:52:23,074 [27] WARN FlexInterfaceService.Global - Application Start
-2012-12-21 09:52:26,022 [27] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-21 09:52:27,552 [19] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 09:52:42,590 [19] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/09 00:00:00','2012/12/21 23:59:59','ts11','0'
-2012-12-21 09:52:42,621 [19] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 09:52:46,817 [19] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/09 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','1'
-2012-12-21 09:52:47,114 [19] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/09 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','0'
-2012-12-21 09:52:47,129 [19] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 09:52:47,254 [19] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 09:55:39,571 [7] WARN FlexInterfaceService.Global - Application End
-2012-12-21 09:56:08,769 [32] WARN FlexInterfaceService.Global - Application Start
-2012-12-21 09:56:12,284 [32] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-21 09:56:14,115 [11] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 09:56:28,386 [11] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/02 00:00:00','2012/12/21 23:59:59','ts11','0'
-2012-12-21 09:56:28,396 [11] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 09:56:33,444 [11] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/02 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','1'
-2012-12-21 09:56:33,634 [11] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/02 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','0'
-2012-12-21 09:56:33,642 [11] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 09:56:33,767 [11] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 10:43:33,480 [95] WARN FlexInterfaceService.Global - Application End
-2012-12-21 10:44:04,214 [84] WARN FlexInterfaceService.Global - Application Start
-2012-12-21 10:44:10,292 [84] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-21 10:44:11,825 [108] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 10:44:29,653 [108] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2010/12/26 00:00:00','2012/12/21 23:59:59','ts11','0'
-2012-12-21 10:44:29,909 [108] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 10:44:33,577 [108] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2010/12/26 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','1'
-2012-12-21 10:44:33,853 [108] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2010/12/26 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','0'
-2012-12-21 10:44:33,950 [108] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 10:44:34,167 [108] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 10:45:03,237 [128] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2010/12/26 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','1'
-2012-12-21 10:45:03,485 [128] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2010/12/26 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','0'
-2012-12-21 10:45:03,493 [128] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 10:45:03,501 [128] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 10:49:59,643 [123] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 10:50:16,231 [123] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/02 00:00:00','2012/12/21 23:59:59','ts11','0'
-2012-12-21 10:50:16,239 [123] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 10:50:20,439 [123] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/02 00:00:00','2012/12/21 23:59:59','ts11','0'
-2012-12-21 10:50:20,445 [123] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 10:50:28,231 [123] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/02 00:00:00','2012/12/21 23:59:59','ts11','0'
-2012-12-21 10:50:28,237 [123] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 10:50:36,067 [123] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/02 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','1'
-2012-12-21 10:50:36,252 [123] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/02 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','0'
-2012-12-21 10:50:36,268 [123] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 10:50:36,277 [123] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 10:50:56,940 [121] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/02 00:00:00','2012/12/21 23:59:59','ts11','0'
-2012-12-21 10:50:56,946 [121] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 10:51:34,998 [8] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/02 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','1'
-2012-12-21 10:51:35,243 [8] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/02 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','0'
-2012-12-21 10:51:35,254 [8] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 10:51:35,263 [8] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 10:52:03,360 [118] WARN FlexInterfaceService.Global - Application End
-2012-12-21 10:52:28,418 [122] WARN FlexInterfaceService.Global - Application Start
-2012-12-21 10:52:31,141 [122] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-21 10:52:32,975 [115] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 10:52:58,437 [115] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2010/12/26 00:00:00','2012/12/21 23:59:59','ts11','0'
-2012-12-21 10:52:58,449 [115] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 10:53:03,810 [115] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2010/12/26 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','1'
-2012-12-21 10:53:04,002 [115] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2010/12/26 00:00:00','2012/12/21 23:59:59','ts11','A2222384','0','0'
-2012-12-21 10:53:04,039 [115] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 10:53:04,182 [115] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 11:00:46,689 [119] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 11:01:04,984 [119] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/02 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','0'
-2012-12-21 11:01:05,146 [119] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 11:01:09,929 [119] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/02 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','A2222384','0','1'
-2012-12-21 11:01:10,125 [119] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/02 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','A2222384','0','0'
-2012-12-21 11:01:10,239 [119] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 11:01:10,825 [119] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 11:01:23,657 [119] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/02 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','1'
-2012-12-21 11:01:23,774 [119] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 11:01:31,594 [119] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/02 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','A2222385','1','1'
-2012-12-21 11:01:31,972 [119] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/02 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','A2222385','1','0'
-2012-12-21 11:01:32,009 [119] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 11:01:32,932 [119] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 11:01:57,285 [126] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2011/01/02 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','1'
-2012-12-21 11:01:57,300 [126] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 11:02:04,749 [126] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/02 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','A2222385','1','1'
-2012-12-21 11:02:04,966 [126] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2011/01/02 00:00:00','2012/12/21 23:59:59',',,,,,,,,,,,,,,,,,,,,,,,,,,,ts11,,,,,','A2222385','1','0'
-2012-12-21 11:02:04,981 [126] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 11:02:04,994 [126] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 11:23:38,347 [130] WARN FlexInterfaceService.Global - Application End
-2012-12-21 11:26:40,622 [3] WARN FlexInterfaceService.Global - Application Start
-2012-12-21 11:26:43,651 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2012-12-21 11:26:44,319 [7] WARN FlexInterfaceService.Service - ConnectServer
-2012-12-21 11:27:02,012 [7] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2010/12/26 00:00:00','2012/12/21 23:59:59','ts11','1'
-2012-12-21 11:27:02,029 [7] INFO FlexInterfaceService.AccountService - GetAllFundNo count:1
-2012-12-21 11:27:09,062 [7] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2010/12/26 00:00:00','2012/12/21 23:59:59','ts11','A2222385','1','1'
-2012-12-21 11:27:09,283 [7] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2010/12/26 00:00:00','2012/12/21 23:59:59','ts11','A2222385','1','0'
-2012-12-21 11:27:09,366 [7] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 1
-2012-12-21 11:27:09,712 [7] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 1
-2012-12-21 11:53:41,123 [28] WARN FlexInterfaceService.Global - Application End
-2013-03-21 08:37:02,313 [3] WARN FlexInterfaceService.Global - Application Start
-2013-03-21 08:37:06,747 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2013-03-21 08:37:08,943 [12] WARN FlexInterfaceService.Service - ConnectServer
-2013-03-21 08:38:18,468 [3] WARN FlexInterfaceService.Global - Application End
-2013-03-21 08:40:03,220 [7] WARN FlexInterfaceService.Global - Application Start
-2013-03-21 08:40:06,112 [7] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2013-03-21 08:40:06,798 [12] WARN FlexInterfaceService.Service - ConnectServer
-2013-03-21 08:51:42,040 [16] WARN FlexInterfaceService.Service - ConnectServer
-2013-03-21 09:12:00,039 [6] WARN FlexInterfaceService.Global - Application End
-2013-03-26 09:05:16,798 [3] WARN FlexInterfaceService.Global - Application Start
-2013-03-26 09:05:21,965 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2013-03-26 09:05:24,737 [12] WARN FlexInterfaceService.Service - ConnectServer
-2013-03-26 09:31:13,658 [28] WARN FlexInterfaceService.Global - Application End
-2013-03-27 09:58:19,698 [3] WARN FlexInterfaceService.Global - Application Start
-2013-03-27 09:58:24,216 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2013-03-27 09:58:27,211 [12] WARN FlexInterfaceService.Service - ConnectServer
-2013-03-27 09:59:27,027 [12] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','0'
-2013-03-27 09:59:27,175 [12] INFO FlexInterfaceService.AccountService - GetAllFundNo count:3
-2013-03-27 09:59:36,678 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','B3333518,B3333520,B3333524','0','1'
-2013-03-27 09:59:37,273 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','B3333518,B3333520,B3333524','0','0'
-2013-03-27 09:59:37,745 [12] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 3
-2013-03-27 10:14:24,746 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','B3333518,B3333520,B3333524','0','1'
-2013-03-27 10:14:24,942 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','B3333518,B3333520,B3333524','0','0'
-2013-03-27 10:14:25,387 [12] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 3
-2013-03-27 10:17:11,166 [22] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','B3333518,B3333520,B3333524','0','1'
-2013-03-27 10:17:11,336 [22] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','B3333518,B3333520,B3333524','0','0'
-2013-03-27 10:17:11,796 [22] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 3
-2013-03-27 10:17:11,978 [22] ERROR NHibernate.Util.ADOExceptionReporter - Value cannot be null.
-Parameter name: item
-2013-03-27 10:17:11,978 [22] ERROR FlexInterfaceService.DepositService - GetDepositData  NHibernate.Exceptions.GenericADOException: Could not execute query[SQL: SQL not available] ---> System.ArgumentNullException: Value cannot be null.
-Parameter name: item
-   at System.ThrowHelper.IfNullAndNullsAreIllegalThenThrow[T](Object value, ExceptionArgument argName)
-   at System.Collections.Generic.List`1.System.Collections.IList.Add(Object item)
-   at NHibernate.Util.ArrayHelper.<>c__DisplayClass2.<AddAll>b__0()
-   at NHibernate.Util.ArrayHelper.AddAll(IList to, IList from)
-   at NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
-   at NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
-   --- End of inner exception stack trace ---
-   at NHibernate.Impl.SessionImpl.List(IQueryExpression queryExpression, QueryParameters queryParameters, IList results)
-   at NHibernate.Impl.AbstractSessionImpl.List(IQueryExpression queryExpression, QueryParameters parameters)
-   at NHibernate.Impl.ExpressionQueryImpl.List()
-   at NHibernate.Linq.DefaultQueryProvider.ExecuteQuery(NhLinqExpression nhLinqExpression, IQuery query, NhLinqExpression nhQuery)
-   at NHibernate.Linq.DefaultQueryProvider.Execute(Expression expression)
-   at NHibernate.Linq.DefaultQueryProvider.Execute[TResult](Expression expression)
-   at System.Linq.Queryable.Max[TSource](IQueryable`1 source)
-   at FlexInterface.Repository.DataRepository.GetAccountingRate(Guid sourceCurrencyId, Guid targetCurrencyId) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Repository\DataRepository.cs:line 79
-   at FlexInterface.Helper.DepositInnerService.AddDesc(BusinessTypeEnum businessType, DepositData data) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterface.Helper\DepositInnerService.fs:line 38
-   at FlexInterfaceService.DepositService.GetDepositPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DepositService.cs:line 62
-2013-03-27 10:42:04,507 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','B3333518,B3333520,B3333524','0','1'
-2013-03-27 10:42:05,059 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','B3333518,B3333520,B3333524','0','0'
-2013-03-27 10:42:05,612 [12] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 3
-2013-03-27 10:42:05,699 [12] ERROR FlexInterfaceService.DepositService - GetDepositData  System.ArgumentException: Column 'AmountRecevided' does not belong to table Table.
-   at System.Data.DataRow.GetDataColumn(String columnName)
-   at System.Data.DataRow.get_Item(String columnName)
-   at FlexInterfaceService.DataRowExtension.EscapeDBNULL[T](DataRow dr, String columnName) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DataRowExtension.cs:line 13
-   at FlexInterfaceService.DepositService.Fill(DataRow dr, String baseCurrencyName, BusinessTypeEnum businessType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DepositService.cs:line 142
-   at FlexInterfaceService.DepositService.GetDepositPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DepositService.cs:line 56
-2013-03-27 11:35:07,206 [53] WARN FlexInterfaceService.Global - Application End
-2013-03-27 11:40:18,581 [3] WARN FlexInterfaceService.Global - Application Start
-2013-03-27 11:40:21,766 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2013-03-27 11:40:23,351 [12] WARN FlexInterfaceService.Service - ConnectServer
-2013-03-27 11:40:38,468 [12] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','0'
-2013-03-27 11:40:38,484 [12] INFO FlexInterfaceService.AccountService - GetAllFundNo count:3
-2013-03-27 11:40:42,419 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','B3333518,B3333520,B3333524','0','1'
-2013-03-27 11:40:42,900 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','B3333518,B3333520,B3333524','0','0'
-2013-03-27 11:40:42,974 [12] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 3
-2013-03-27 11:40:43,074 [12] ERROR FlexInterfaceService.DepositService - GetDepositData  System.ArgumentException: Column 'AmountRecevided' does not belong to table Table.
-   at System.Data.DataRow.GetDataColumn(String columnName)
-   at System.Data.DataRow.get_Item(String columnName)
-   at FlexInterfaceService.DataRowExtension.EscapeDBNULL[T](DataRow dr, String columnName) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DataRowExtension.cs:line 13
-   at FlexInterfaceService.DepositService.Fill(DataRow dr, String baseCurrencyName, BusinessTypeEnum businessType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DepositService.cs:line 142
-   at FlexInterfaceService.DepositService.GetDepositPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DepositService.cs:line 56
-2013-03-27 11:41:55,102 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','B3333518,B3333520,B3333524','0','1'
-2013-03-27 11:41:55,575 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','B3333518,B3333520,B3333524','0','0'
-2013-03-27 11:41:55,672 [12] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 3
-2013-03-27 11:41:55,765 [12] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 3
-2013-03-27 11:49:03,173 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','B3333518,B3333520,B3333524','0','1'
-2013-03-27 11:49:03,420 [12] WARN FlexInterfaceService.DepositService - GetDepositData dbo.P_GetDepositForFlex'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','B3333518,B3333520,B3333524','0','0'
-2013-03-27 11:49:03,514 [12] WARN FlexInterfaceService.DepositService - GetDepositData End Count: 3
-2013-03-27 11:49:03,532 [12] WARN FlexInterfaceService.DepositService - GetDepositData Complete Count: 3
-2013-03-27 11:51:47,670 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2013/03/18 00:00:00','2013/03/20 23:59:59','nancy4','2'
-2013-03-27 11:51:47,676 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo count:0
-2013-03-27 11:51:53,678 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2013/03/18 00:00:00','2013/03/27 23:59:59','nancy4','2'
-2013-03-27 11:51:53,682 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo count:0
-2013-03-27 11:51:58,378 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2013/03/05 00:00:00','2013/03/27 23:59:59','nancy4','2'
-2013-03-27 11:51:58,383 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo count:0
-2013-03-27 11:52:02,412 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2013/02/24 00:00:00','2013/03/27 23:59:59','nancy4','2'
-2013-03-27 11:52:02,419 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo count:0
-2013-03-27 11:52:03,873 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2013/02/24 00:00:00','2013/03/27 23:59:59','nancy4','2'
-2013-03-27 11:52:03,878 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo count:0
-2013-03-27 11:52:09,519 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/12/02 00:00:00','2013/03/27 23:59:59','nancy4','2'
-2013-03-27 11:52:09,524 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo count:0
-2013-03-27 11:52:13,907 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/11/28 00:00:00','2013/03/27 23:59:59','nancy4','2'
-2013-03-27 11:52:13,913 [24] INFO FlexInterfaceService.AccountService - GetAllFundNo count:0
-2013-03-27 13:38:16,587 [79] INFO FlexInterfaceService.AccountService - GetAllFundNo sql:dbo.Flex_GetDepositCode'2012/11/28 00:00:00','2013/03/27 23:59:59','nancy1','2'
-2013-03-27 13:38:16,607 [79] INFO FlexInterfaceService.AccountService - GetAllFundNo count:0
-2013-03-27 13:38:30,886 [79] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2012/11/28','2013/03/27','nancy1','1','0' 
-2013-03-27 13:38:31,809 [79] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:8
-2013-03-27 13:38:31,813 [79] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
-Parameter name: AccountingMappingCode
-   at FlexInterfaceService.InterestStorageLevyCommissionFactoryBase.CreateHelper(DataRow dr, PLData data) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\InterestStorageLevyCommissionFactoryBase.cs:line 16
-   at FlexInterfaceService.FloatingPlDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\FloatingPlDataFactory.cs:line 14
-   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 60
-   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 99
-2013-03-27 14:03:27,154 [12] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2012/11/29','2013/03/27','nancy1','1','0' 
-2013-03-27 14:03:28,370 [12] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:8
-2013-03-27 14:03:28,375 [12] ERROR FlexInterfaceService.PLService - System.InvalidCastException: Specified cast is not valid.
-   at FlexInterfaceService.DataRowExtension.EscapeDBNULL[T](DataRow dr, String columnName) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\DataRowExtension.cs:line 13
-   at FlexInterfaceService.FloatingPlDataFactory.InitializeBeforeData(FloatingPLData data, DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\FloatingPlDataFactory.cs:line 43
-   at FlexInterfaceService.FloatingPlDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\FloatingPlDataFactory.cs:line 25
-   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 60
-   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 99
-2013-03-27 14:05:41,714 [66] WARN FlexInterfaceService.Global - Application End
-2013-03-27 14:06:15,595 [3] WARN FlexInterfaceService.Global - Application Start
-2013-03-27 14:06:19,090 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2013-03-27 14:06:20,774 [9] WARN FlexInterfaceService.Service - ConnectServer
-2013-03-27 14:06:38,745 [9] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/03/13','2013/03/27','nancy1','1','0' 
-2013-03-27 14:06:40,195 [9] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:8
-2013-03-27 14:06:40,204 [9] INFO FlexInterfaceService.PLService - Final Data quantity: 8
-2013-03-27 14:09:06,233 [3] WARN FlexInterfaceService.Global - Application End
-2013-03-27 14:11:16,376 [3] WARN FlexInterfaceService.Global - Application Start
-2013-03-27 14:11:19,662 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2013-03-27 14:11:21,254 [7] WARN FlexInterfaceService.Service - ConnectServer
-2013-03-27 14:11:42,465 [7] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/03/19','2013/03/27','nancy1','1','0' 
-2013-03-27 14:11:43,592 [7] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:8
-2013-03-27 14:11:43,601 [7] INFO FlexInterfaceService.PLService - Final Data quantity: 8
-2013-03-27 14:13:34,756 [3] WARN FlexInterfaceService.Global - Application End
-2013-03-27 14:14:05,893 [3] WARN FlexInterfaceService.Global - Application Start
-2013-03-27 14:14:09,161 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2013-03-27 14:14:10,783 [9] WARN FlexInterfaceService.Service - ConnectServer
-2013-03-27 14:14:28,596 [9] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/03/18','2013/03/27','nancy1','1','0' 
-2013-03-27 14:14:29,677 [9] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:8
-2013-03-27 14:14:29,688 [9] INFO FlexInterfaceService.PLService - Final Data quantity: 8
-2013-03-27 14:22:36,920 [23] WARN FlexInterfaceService.Global - Application End
-2013-04-01 16:17:22,440 [3] WARN FlexInterfaceService.Global - Application Start
-2013-04-01 16:17:28,316 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2013-04-01 16:17:33,696 [12] WARN FlexInterfaceService.Service - ConnectServer
-2013-04-01 16:19:07,659 [12] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/02/24','2013/03/20','nancy1','1','0' 
-2013-04-01 16:19:08,811 [12] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:9
-2013-04-01 16:19:08,815 [12] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
-Parameter name: AccountingMappingCode
-   at FlexInterfaceService.InterestStorageLevyCommissionFactoryBase.CreateHelper(DataRow dr, PLData data) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\InterestStorageLevyCommissionFactoryBase.cs:line 16
-   at FlexInterfaceService.FloatingPlDataFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\FloatingPlDataFactory.cs:line 14
-   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 60
-   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 99
-2013-04-01 16:43:21,341 [34] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/02/24','2013/03/20','nancy1','1','0' 
-2013-04-01 16:43:22,479 [34] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:9
-2013-04-01 16:43:22,499 [34] INFO FlexInterfaceService.PLService - Final Data quantity: 7
-2013-04-01 16:53:03,502 [12] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/02/24','2013/03/20','nancy1','0','0' 
-2013-04-01 16:53:48,206 [12] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:13
-2013-04-01 16:53:48,207 [12] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
+   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 93
+2013-07-17 09:56:00,851 [53] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/16','2013/07/17',',,,,,,,,,,,,,,,,,,,,nancy1,,,,,,,,,,,,,,','3','0' 
+2013-07-17 09:56:01,662 [53] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:11
+2013-07-17 09:56:01,662 [53] INFO FlexInterfaceService.PLService - Final Data quantity: 9
+2013-07-17 09:57:05,149 [47] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/16','2013/07/17',',,,,,,,,,,,,,,,,,,,,nancy1,,,,,,,,,,,,,,','0','0' 
+2013-07-17 09:57:06,054 [47] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:11
+2013-07-17 09:57:06,054 [47] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
 Parameter name: AccountingMappingCode
    at FlexInterfaceService.InterestStorageLevyCommissionFactoryBase.CreateHelper(DataRow dr, PLData data) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\InterestStorageLevyCommissionFactoryBase.cs:line 16
    at FlexInterfaceService.RealizedPLFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\RealizedPLFactory.cs:line 14
-   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 57
-   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 99
-2013-04-01 17:12:40,056 [12] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/02/24','2013/03/20','nancy1','0','0' 
-2013-04-01 17:13:25,536 [12] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:13
-2013-04-01 17:13:25,537 [12] ERROR FlexInterfaceService.PLService - System.ArgumentNullException: Value cannot be null.
-Parameter name: AccountingMappingCode
-   at FlexInterfaceService.InterestStorageLevyCommissionFactoryBase.CreateHelper(DataRow dr, PLData data) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\InterestStorageLevyCommissionFactoryBase.cs:line 16
-   at FlexInterfaceService.RealizedPLFactory.Create(DataRow dr) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\Factory\RealizedPLFactory.cs:line 14
-   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 57
-   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 99
-2013-04-01 17:13:53,829 [70] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/03/19','2013/03/19','nancy1','0','0' 
-2013-04-01 17:13:54,783 [70] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:10
-2013-04-01 17:13:54,783 [70] INFO FlexInterfaceService.PLService - Final Data quantity: 3
-2013-04-01 17:53:15,283 [86] WARN FlexInterfaceService.Global - Application End
-2013-04-02 11:04:24,698 [3] WARN FlexInterfaceService.Global - Application Start
-2013-04-02 11:04:29,409 [3] WARN FlexInterfaceService.Global - ConnectionString: data source=ws0303;initial catalog=iExchange_V3;user id=sa;password=Omni1234;Connect Timeout=300
-2013-04-02 11:04:31,939 [9] WARN FlexInterfaceService.Service - ConnectServer
-2013-04-02 11:05:12,336 [9] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/02/23','2013/03/20','nancy1','1','0' 
-2013-04-02 11:05:13,283 [9] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:9
-2013-04-02 11:05:13,294 [9] INFO FlexInterfaceService.PLService - Final Data quantity: 7
-2013-04-02 11:07:00,606 [9] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/03/19','2013/03/19','nancy1','0','0' 
-2013-04-02 11:07:01,428 [9] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:10
-2013-04-02 11:07:01,429 [9] INFO FlexInterfaceService.PLService - Final Data quantity: 3
-2013-04-02 11:27:21,477 [28] WARN FlexInterfaceService.Global - Application End
+   at FlexInterfaceService.PLService.Fill(DataRow dr, BusinessTypeEnum plType) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 51
+   at FlexInterfaceService.PLService.GetPLDataPageCount(String sessionID, QueryObject parameter) in D:\Teams\iExchangeCollection\iExchange3 Team\iExchange3\FlexInterfaceService\PLService.cs:line 93
+2013-07-17 09:59:35,553 [44] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/16','2013/07/17',',,,,,,,,,,,,,,,,,,,,nancy1,,,,,,,,,,,,,,','0','0' 
+2013-07-17 09:59:36,661 [44] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:11
+2013-07-17 09:59:36,661 [44] INFO FlexInterfaceService.PLService - Final Data quantity: 0
+2013-07-17 10:20:22,475 [112] WARN FlexInterfaceService.Service - ConnectServer
+2013-07-17 10:20:46,715 [112] WARN FlexInterfaceService.PLService -  GET PL DATA, sql:   dbo.P_GetMoneyFlowForFlex'2013/07/17','2013/07/17','nancy1','0','0' 
+2013-07-17 10:20:47,358 [112] WARN FlexInterfaceService.PLService - GET PL DATA End.  Result Count:0
+2013-07-17 10:20:47,358 [112] INFO FlexInterfaceService.PLService - Final Data quantity: 0
+2013-07-17 10:44:58,267 [29] WARN FlexInterfaceService.Global - Application End

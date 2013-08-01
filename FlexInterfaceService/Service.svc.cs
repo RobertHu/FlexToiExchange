@@ -35,7 +35,6 @@ namespace FlexInterfaceService
             }
         }
 
-
         IEnumerable<string> IDepositService.GetAllCustomerCode(string sessionID)
         {
             if (!ClientManager.Default.Contains(sessionID)) return null;
@@ -67,7 +66,6 @@ namespace FlexInterfaceService
             return ConfigHelper.ConnectionString;
         }
 
-
         QueryPageCountResult IDepositService.GetDepositPageCount(string sessionID, QueryObject data)
         {
             if (!ClientManager.Default.Contains(sessionID)) return new QueryPageCountResult { Type = ReturnType.Error };
@@ -81,7 +79,6 @@ namespace FlexInterfaceService
                 return new QueryPageCountResult { Type = ReturnType.Error };
             }
         }
-
 
         int? IFlexService.GetExchangePlAccount(string sessionID)
         {
@@ -98,7 +95,6 @@ namespace FlexInterfaceService
         }
 
 
-
         QueryPageCountResult IPLService.GetPLDataPageCount(string sessionID, QueryObject parameter)
         {
             if (!ClientManager.Default.Contains(sessionID)) return new QueryPageCountResult { Type = ReturnType.Error };
@@ -112,11 +108,6 @@ namespace FlexInterfaceService
                 return new QueryPageCountResult { Type = ReturnType.Error };
             }
         }
-
-
-      
-
-
 
         LoginResult IFlexService.ConnectServer(string loginId, string pwd)
         {
@@ -145,10 +136,6 @@ namespace FlexInterfaceService
         {
             return ClientManager.Default.Contains(sessionID);
         }
-
-
-
-
 
         DepositData[] IDepositService.GetDepositDataByPage(string sessionID, int pageIndex)
         {

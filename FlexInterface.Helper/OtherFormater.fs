@@ -43,23 +43,12 @@ let internal formatLine (parameter: OtherPlParameter) =
     append(parameter.equvAmount.ToThousandSeparatedString(15))
     append(parameter.d_cSign.ToFormatStr(1))
     let mutable desc5 = ""
-    let isStartOrEnd = isTheStartOrEndOfTheMonth (parameter.fromTradeDay) (parameter.toTradeDay)
     let b1 , b2 = parameter.businessTypeDesc , parameter.isIncomeOrExpenseDesc
-    match isStartOrEnd with
-    | None ->
-        let s1,s2,s3, s4=
-            parameter.fromTradeDay.ToFormateStr(),
-            parameter.toTradeDay.ToFormateStr(),
-            parameter.productName,
-            parameter.CustomerName
-        desc5 <- sprintf "由%s至%s孖展%s%s(%s)-%s" s1 s2 b1 b2 s3 s4
+    let s1,s2,s3=
+        parameter.fromTradeDay.ToFormateStr(),
+        parameter.toTradeDay.ToFormateStr(),
+        parameter.productName
+    desc5 <- sprintf "%s-%s孖展%s%s(%s)" s1 s2 b1 b2 s3
         
-    | Some(year, month) ->
-        let s1,s2,s3, s4 =
-            year,
-            month,
-            parameter.productName,
-            parameter.CustomerName
-        desc5 <- sprintf "%d/ %d月份孖展%s%s(%s)-%s" s1 s2 b1 b2 s3 s4
     append(desc5.ToFormatStr(60,false))  
     sb.ToString()

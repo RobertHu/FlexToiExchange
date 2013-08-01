@@ -15,7 +15,6 @@ namespace FlexInterface.Repository
                 return session.Query<Account>()
                               .OrderBy(m => m.MT4LoginId)
                               .Select(m => m.MT4LoginId.ToString()).ToList();
-
             }
         }
 
@@ -37,8 +36,6 @@ namespace FlexInterface.Repository
                     .FirstOrDefault();
             }
         }
-
-
 
         public static IEnumerable<string> GetAccountGroups()
         {
@@ -67,18 +64,5 @@ namespace FlexInterface.Repository
                 foreach (var item in query) yield return item;
             }
         }
-
-        public static double GetAccountingRate(Guid sourceCurrencyId, Guid targetCurrencyId)
-        {
-            using (var session = SessionManager.OpenLocalSession())
-            {
-               
-                var query = session.Query<AccountingCurrencyRate>()
-                                   .Where(m => (m.SourceCurrencyID == sourceCurrencyId && m.TargetCurrencyID == targetCurrencyId) || (m.TargetCurrencyID == sourceCurrencyId && m.SourceCurrencyID == targetCurrencyId))
-                                   .Select(m => m.BookRate);
-                return query.Max();
-            }
-        }
-
     }
 }

@@ -16,13 +16,7 @@ namespace FlexInterfaceService
         private ILog _Log = LogManager.GetLogger(typeof(PLService));
         private Dictionary<string, List<PLData>> _Dict = new Dictionary<string, List<PLData>>();
         private object _SycBlock = new object();
-        private AccountService _AccountService;
-        private CommonService _CommonService;
-        public PLService(AccountService accountService)
-        {
-            this._AccountService = accountService;
-            this._CommonService = new CommonService();
-        }
+
         public int GetPLDataRecordCount(QueryObject parameter)
         {
             PLPrameter plParameter = new PLPrameter()
@@ -139,7 +133,7 @@ namespace FlexInterfaceService
             {
                 result.Type = ReturnType.Normal;
             }
-            result.PageCount = this._CommonService.GetPageCount(count);
+            result.PageCount = count / ConfigHelper.PageSize + (count % ConfigHelper.PageSize == 0 ? 0 : 1);
             lock (this._SycBlock)
             {
                 this._Dict[sessionID] = plList;

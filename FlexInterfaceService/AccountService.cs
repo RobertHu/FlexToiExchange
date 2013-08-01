@@ -34,23 +34,6 @@ namespace FlexInterfaceService
         }
 
 
-
-        public int? GetAccountingMapping(Tuple<int, Guid, Guid> key)
-        {
-            try
-            {
-                int mt4loginID = DataRepository.GetAccountingMappingMt4LoginID(key.Item1, key.Item2, key.Item3);
-                if (mt4loginID == 0) return null;
-                return mt4loginID;
-            }
-            catch (Exception e)
-            {
-                _Log.ErrorFormat("GetAccountingMapping {0}", e);
-                return null;
-            }
-        }
-
-
         public static string[] GetAllFundNo(QueryObject queryObj)
         {
             QueryDepositCodeParameter parameter = new QueryDepositCodeParameter

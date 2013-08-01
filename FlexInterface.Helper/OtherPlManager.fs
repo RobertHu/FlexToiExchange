@@ -68,7 +68,9 @@ let getTypeDescText businessType =
     match businessType with
     | BusinessTypeEnum.InterestPL -> "未平倉利息"
     | BusinessTypeEnum.StoragePL -> "未平倉倉租" 
-    | _ ->  "交易手續費"
+    | BusinessTypeEnum.Commission -> "交易佣金"
+    | BusinessTypeEnum.Levy ->  "交易徵費"
+    | _ -> ""
    
 let Process(item :FlexInterface.Common.InterestStorageLevyCommisionPLData,index,fs: FileStream) =
     let voucherNo = getPLVouchNo(index)
